@@ -33,15 +33,15 @@ def add_row(row_type):
         new_quantity_entry.grid(row=next_row, column=2, padx=10, pady=10)
 
         add_ingredient_button.grid(row=next_row, column=4)
-
-        # Fixed: Append the quantity entry, not the ingredient entry twice
         ingredients_rows.append((new_ingredient_entry, new_quantity_entry))
 
     elif row_type == "step":
-        new_step_entry = tkinter.Entry(middle_frame)
+        new_step_entry = tkinter.Entry(bottom_frame)
+        new_step_entry.config(width=40)
         new_step_entry.grid(row=next_row, column=1, padx=10, pady=10)
 
         add_steps_button.grid(row=next_row, column=4)
+        save_recipe_button.grid(row=next_row + 1, column=1)
         steps_rows.append(new_step_entry)
 
     next_row += 1
@@ -70,16 +70,17 @@ def passing_info_to_save():
 #UI, Labels, Entry boxes, buttons
 window = tkinter.Tk()
 window.title("Meal Prepper")
+window.geometry("600x600")
 
 # canvas_recipe = tkinter.Canvas(window, width=200, height=200) # Potential logo
 # canvas_recipe.grid(row=0, column=0)
 
 top_frame = tkinter.Frame(window)
-top_frame.pack(pady=10)
+top_frame.grid(row=0, column=0,padx=10,pady=10)
 middle_frame = tkinter.Frame(window)
-middle_frame.pack(pady=20)
+middle_frame.grid(row=1, column=0,padx=10,pady=10)
 bottom_frame = tkinter.Frame(window)
-bottom_frame.pack(pady=30)
+bottom_frame.grid(row=2, column=0,padx=10,pady=10)
 
 meal_name_label = tkinter.Label(top_frame, text="Meal Name:")
 meal_name_label.grid(row=0, column=0,padx=10,pady=10)
@@ -108,7 +109,6 @@ list_of_steps_entry = tkinter.Entry(bottom_frame)
 list_of_steps_entry.grid(row=1, column=1, columnspan=3)
 list_of_steps_entry.config(width=40)
 add_steps_button = tkinter.Button(bottom_frame,text="add step",command=lambda: add_row("step"))
-add_steps_button.grid(row=1, column=4)
 add_steps_button.grid(row=1, column=4) # Must add another entry box below to add a new step
 # to be called when there are at least two steps
 remove_steps_button = tkinter.Button(text="remove step")
