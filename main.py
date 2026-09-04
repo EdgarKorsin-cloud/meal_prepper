@@ -8,7 +8,7 @@ from datetime import datetime
 engine = create_engine('sqlite:///app.db.sqlite')
 Base=declarative_base()
 # variables
-next_row = 4
+next_row = 2
 ingredients_rows = []
 steps_rows = []
 
@@ -22,22 +22,27 @@ class Recipe(Base):
 Base.metadata.create_all(engine)
 
 # Functions
-def add_ingredient_row():
+def add_row(row_type):
     global next_row
 
-    new_ingredient_entry = tkinter.Entry(middle_frame)
-    new_ingredient_entry.grid(row=next_row, column=1,padx=10,pady=10)
-    new_quantity_entry = tkinter.Entry(middle_frame)
-    new_quantity_entry.grid(row=next_row, column=2,padx=10,pady=10)
+    if row_type == "ingredient":
+        new_ingredient_entry = tkinter.Entry(middle_frame)
+        new_ingredient_entry.grid(row=next_row, column=1, padx=10, pady=10)
 
-    add_ingredient_button.grid(row = next_row, column = 4)
-    ingredients_rows.append((new_ingredient_entry, new_ingredient_entry))
+        new_quantity_entry = tkinter.Entry(middle_frame)
+        new_quantity_entry.grid(row=next_row, column=2, padx=10, pady=10)
 
-    steps_label.grid(row=next_row +1, column=1, columnspan=2)
-    list_of_steps.grid(row=next_row +2, column=0)
-    list_of_steps_entry.grid(row=next_row +2, column=1)
-    add_steps_button.grid(row=next_row +2, column=2)
-    save_recipe_button.grid(row=6, column=1, columnspan=2)
+        add_ingredient_button.grid(row=next_row, column=4)
+
+        # Fixed: Append the quantity entry, not the ingredient entry twice
+        ingredients_rows.append((new_ingredient_entry, new_quantity_entry))
+
+    elif row_type == "step":
+        new_step_entry = tkinter.Entry(middle_frame)
+        new_step_entry.grid(row=next_row, column=1, padx=10, pady=10)
+
+        add_steps_button.grid(row=next_row, column=4)
+        steps_rows.append(new_step_entry)
 
     next_row += 1
 
@@ -90,7 +95,7 @@ meal_ingredient_quantity_label = tkinter.Label(middle_frame, text="Quantity:")
 meal_ingredient_quantity_label.grid(row=0, column=2)
 meal_ingredient_quantity_entry = tkinter.Entry(middle_frame)
 meal_ingredient_quantity_entry.grid(row=1, column=2)
-add_ingredient_button = tkinter.Button(middle_frame,text="add ingredient",command=add_ingredient_row)
+add_ingredient_button = tkinter.Button(middle_frame,text="add ingredient",command=lambda: add_row("ingredient"))
 add_ingredient_button.grid(row=1, column=4)
 ingredients_rows.append((meal_ingredient_entry, meal_ingredient_quantity_entry))
 
@@ -102,7 +107,8 @@ list_of_steps.grid(row=1, column=0)
 list_of_steps_entry = tkinter.Entry(bottom_frame)
 list_of_steps_entry.grid(row=1, column=1, columnspan=3)
 list_of_steps_entry.config(width=40)
-add_steps_button = tkinter.Button(bottom_frame,text="add step")
+add_steps_button = tkinter.Button(bottom_frame,text="add step",command=lambda: add_row("step"))
+add_steps_button.grid(row=1, column=4)
 add_steps_button.grid(row=1, column=4) # Must add another entry box below to add a new step
 # to be called when there are at least two steps
 remove_steps_button = tkinter.Button(text="remove step")
