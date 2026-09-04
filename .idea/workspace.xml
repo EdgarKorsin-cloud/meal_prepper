@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8fd0dbd4-6df7-47e1-90b8-4a7172edf5c2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/meal_prepper.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000091995836464" />
+      <entry key="MS500" value="1.0983453056848331" />
+      <entry key="S2" value="1.5642333298457811" />
+      <entry key="S5" value="2.060394624877119" />
+      <entry key="S10" value="3.5283668241351096" />
+      <entry key="S30" value="11.716280147930481" />
+      <entry key="S60" value="21.659410437935936" />
+      <entry key="M2" value="35.733407458896494" />
+      <entry key="M5" value="59.08061718779873" />
+      <entry key="M10" value="75.34946675126379" />
+      <entry key="M15" value="82.74147420473993" />
+      <entry key="M30" value="91.51339322058963" />
+      <entry key="H1" value="96.51813373808106" />
+      <entry key="H2" value="99.1960663794403" />
+      <entry key="H4" value="100.58184034075795" />
+      <entry key="D1" value="101.76135236124048" />
+      <entry key="W1" value="101.96585094281235" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="3.2698688347171994E-261" />
+      <entry key="S2" value="7.561928784263704E-66" />
+      <entry key="S5" value="8.942379877494329E-27" />
+      <entry key="S10" value="9.460524967157317E-14" />
+      <entry key="S30" value="4.9416673115183684E-5" />
+      <entry key="S60" value="0.009363323431124532" />
+      <entry key="M2" value="0.16170541022710108" />
+      <entry key="M5" value="1.0482722195715624" />
+      <entry key="M10" value="2.027044954330887" />
+      <entry key="M15" value="2.536680025186904" />
+      <entry key="M30" value="3.181714166961477" />
+      <entry key="H1" value="3.566437597005471" />
+      <entry key="H2" value="3.7767285171765934" />
+      <entry key="H4" value="3.8866907551201213" />
+      <entry key="D1" value="3.9808782368909377" />
+      <entry key="W1" value="3.997262459131127" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.8705588544251411" />
+      <entry key="MS500" value="1.0689763359645594" />
+      <entry key="S2" value="1.5530552052404014" />
+      <entry key="S5" value="2.0180877769885655" />
+      <entry key="S10" value="3.4459673469458356" />
+      <entry key="S30" value="11.62573083131943" />
+      <entry key="S60" value="21.580126416793764" />
+      <entry key="M2" value="35.80555355073028" />
+      <entry key="M5" value="60.04554875416413" />
+      <entry key="M10" value="77.31428581364307" />
+      <entry key="M15" value="85.23003151599197" />
+      <entry key="M30" value="94.66698871340881" />
+      <entry key="H1" value="100.0693310778873" />
+      <entry key="H2" value="102.96485580727216" />
+      <entry key="H4" value="104.46447864154439" />
+      <entry key="D1" value="105.74154339481434" />
+      <entry key="W1" value="105.96301493749407" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3Iq5HElOfTPAlkm6H0CeX9lyZhZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-821f704e66d9-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.9437.214" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8fd0dbd4-6df7-47e1-90b8-4a7172edf5c2" name="Changes" comment="" />
+      <created>1788479168459</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788479168459</updated>
+      <workItem from="1788479169471" duration="802000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/meal_prepper$main.coverage" NAME="main Coverage Results" MODIFIED="1788479971422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
