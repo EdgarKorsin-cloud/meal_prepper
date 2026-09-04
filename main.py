@@ -26,17 +26,17 @@ def add_row(row_type):
     global next_row
 
     if row_type == "ingredient":
-        new_ingredient_entry = tkinter.Entry(middle_frame)
+        new_ingredient_entry = tkinter.Entry(middle_frame_left)
         new_ingredient_entry.grid(row=next_row, column=1, padx=10, pady=10)
 
-        new_quantity_entry = tkinter.Entry(middle_frame)
+        new_quantity_entry = tkinter.Entry(middle_frame_left)
         new_quantity_entry.grid(row=next_row, column=2, padx=10, pady=10)
 
         add_ingredient_button.grid(row=next_row, column=4)
         ingredients_rows.append((new_ingredient_entry, new_quantity_entry))
 
     elif row_type == "step":
-        new_step_entry = tkinter.Entry(bottom_frame)
+        new_step_entry = tkinter.Entry(bottom_frame_left)
         new_step_entry.config(width=40)
         new_step_entry.grid(row=next_row, column=1, padx=10, pady=10)
 
@@ -67,7 +67,7 @@ def passing_info_to_save():
 
     print("Recipe saved")
 
-#UI, Labels, Entry boxes, buttons
+#UI, Labels, Entry boxes, buttons for entering recipes
 window = tkinter.Tk()
 window.title("Meal Prepper")
 window.geometry("600x600")
@@ -75,45 +75,54 @@ window.geometry("600x600")
 # canvas_recipe = tkinter.Canvas(window, width=200, height=200) # Potential logo
 # canvas_recipe.grid(row=0, column=0)
 
-top_frame = tkinter.Frame(window)
-top_frame.grid(row=0, column=0,padx=10,pady=10)
-middle_frame = tkinter.Frame(window)
-middle_frame.grid(row=1, column=0,padx=10,pady=10)
-bottom_frame = tkinter.Frame(window)
-bottom_frame.grid(row=2, column=0,padx=10,pady=10)
+top_frame_left = tkinter.Frame(window)
+top_frame_left.grid(row=0, column=0, padx=10, pady=10)
+middle_frame_left = tkinter.Frame(window)
+middle_frame_left.grid(row=1, column=0, padx=10, pady=10)
+bottom_frame_left = tkinter.Frame(window)
+bottom_frame_left.grid(row=2, column=0, padx=10, pady=10)
 
-meal_name_label = tkinter.Label(top_frame, text="Meal Name:")
+meal_name_label = tkinter.Label(top_frame_left, text="Meal Name:")
 meal_name_label.grid(row=0, column=0,padx=10,pady=10)
-meal_name_entry = tkinter.Entry(top_frame)
+meal_name_entry = tkinter.Entry(top_frame_left)
 meal_name_entry.focus_set()
 meal_name_entry.grid(row=0, column=1,padx=10,pady=10)
 
-meal_ingredient_label = tkinter.Label(middle_frame, text="Meal Ingredients:")
+meal_ingredient_label = tkinter.Label(middle_frame_left, text="Meal Ingredients:")
 meal_ingredient_label.grid(row=0, column=1)
-meal_ingredient_entry = tkinter.Entry(middle_frame)
+meal_ingredient_entry = tkinter.Entry(middle_frame_left)
 meal_ingredient_entry.grid(row=1, column=1)
-meal_ingredient_quantity_label = tkinter.Label(middle_frame, text="Quantity:")
+meal_ingredient_quantity_label = tkinter.Label(middle_frame_left, text="Quantity:")
 meal_ingredient_quantity_label.grid(row=0, column=2)
-meal_ingredient_quantity_entry = tkinter.Entry(middle_frame)
+meal_ingredient_quantity_entry = tkinter.Entry(middle_frame_left)
 meal_ingredient_quantity_entry.grid(row=1, column=2)
-add_ingredient_button = tkinter.Button(middle_frame,text="add ingredient",command=lambda: add_row("ingredient"))
+add_ingredient_button = tkinter.Button(middle_frame_left, text="add ingredient", command=lambda: add_row("ingredient"))
 add_ingredient_button.grid(row=1, column=4)
 ingredients_rows.append((meal_ingredient_entry, meal_ingredient_quantity_entry))
 
 # to be called when there are at least two ingredients remove_ingredient_button = tkinter.Button(text="remove ingredient")
-steps_label = tkinter.Label(bottom_frame, text="STEPS")
+steps_label = tkinter.Label(bottom_frame_left, text="STEPS")
 steps_label.grid(row=0, column=1,columnspan=2)
-list_of_steps = tkinter.Label(bottom_frame, text="Steps:")
+list_of_steps = tkinter.Label(bottom_frame_left, text="Steps:")
 list_of_steps.grid(row=1, column=0)
-list_of_steps_entry = tkinter.Entry(bottom_frame)
+list_of_steps_entry = tkinter.Entry(bottom_frame_left)
 list_of_steps_entry.grid(row=1, column=1, columnspan=3)
 list_of_steps_entry.config(width=40)
-add_steps_button = tkinter.Button(bottom_frame,text="add step",command=lambda: add_row("step"))
+add_steps_button = tkinter.Button(bottom_frame_left, text="add step", command=lambda: add_row("step"))
 add_steps_button.grid(row=1, column=4) # Must add another entry box below to add a new step
 # to be called when there are at least two steps
 remove_steps_button = tkinter.Button(text="remove step")
 # saves to sqldb
-save_recipe_button = tkinter.Button(bottom_frame,text="SAVE RECIPE",command=passing_info_to_save)
+save_recipe_button = tkinter.Button(bottom_frame_left, text="SAVE RECIPE", command=passing_info_to_save)
 save_recipe_button.grid(row=2, column=1,)
+
+
+#UI for showing recipe
+center_frame=tkinter.Frame(window)
+center_frame.grid(row=0, column=1, padx=10, pady=10)
+recipe_name_label = tkinter.Label(center_frame, text="Recipe for ",font=("Serif", 24))
+recipe_name_label.grid(row=0, column=1)
+
+
 
 window.mainloop()
