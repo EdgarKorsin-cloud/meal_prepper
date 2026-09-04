@@ -32,7 +32,7 @@ add_steps_button = tkinter.Button(text="add step")
 add_steps_button.grid(row=4, column=2) # Must add another entry box below to add a new step
 # to be called when there are at least two steps
 remove_steps_button = tkinter.Button(text="remove step")
-
+# saves to sqldb
 save_recipe_button = tkinter.Button(text="SAVE RECIPE")
 save_recipe_button.grid(row=5, column=1,columnspan=2)
 
