@@ -1,9 +1,25 @@
 import tkinter
+from sqlalchemy import create_engine
+from sqlalchemy.orm import declarative_base, relationship
+from sqlalchemy import Column, Integer, String, Float, ForeignKey, DateTime
+from datetime import datetime
 
-window = tkinter.Tk()
-window.title("Meal Prepper")
+#DB setup
+engine = create_engine('sqlite:///app.db.sqlite')
+Base=declarative_base()
+
+class Recipe(Base):
+    __tablename__ = 'recipes'
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+    ingredients = Column(String)
+    steps = Column(String)
+Base.metadata.create_all(engine)
 
 #UI, Labels, Entry boxes, buttons
+window = tkinter.Tk()
+window.title("Meal Prepper")
 canvas_recipe = tkinter.Canvas(window, width=200, height=200) # Potential logo
 canvas_recipe.grid(row=0, column=0)
 meal_name_label = tkinter.Label(window, text="Meal Name:")
