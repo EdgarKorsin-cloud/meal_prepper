@@ -47,6 +47,11 @@ def add_row(row_type):
         steps_rows.append(new_step_entry)
 
     next_row += 1
+def remove_row(row_type):
+    global next_row
+    if row_type == "ingredient":
+        pass
+
 
 def save_recipe(name,ingredients,steps):
     Session = sessionmaker(bind=engine)
