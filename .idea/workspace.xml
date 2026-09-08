@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fd0dbd4-6df7-47e1-90b8-4a7172edf5c2" name="Changes" comment="Created a new frame for recipes to show, refactored frame names">
+    <list default="true" id="8fd0dbd4-6df7-47e1-90b8-4a7172edf5c2" name="Changes" comment="Fix ingredient and step entry string to be saved in DB and add numbered lists">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -30,61 +30,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="3.5178786265619795E-18" />
-      <entry key="MS500" value="3.2303990232131826E-4" />
-      <entry key="S2" value="0.13406457710224282" />
-      <entry key="S5" value="0.44763662968164086" />
-      <entry key="S10" value="0.6690758164375654" />
-      <entry key="S30" value="0.9169836062787184" />
-      <entry key="S60" value="1.2261047780627614" />
-      <entry key="M2" value="1.743577533055014" />
-      <entry key="M5" value="4.604043880000937" />
-      <entry key="M10" value="19.59061253619052" />
-      <entry key="M15" value="39.194677200463495" />
-      <entry key="M30" value="91.09876788364015" />
-      <entry key="H1" value="163.5269502691895" />
-      <entry key="H2" value="254.35584675139708" />
-      <entry key="H4" value="341.14698152289486" />
-      <entry key="D1" value="456.84312934389555" />
-      <entry key="W1" value="482.51786100061065" />
+      <entry key="MS100" value="1.0000000916049507" />
+      <entry key="MS500" value="1.0423749095321193" />
+      <entry key="S2" value="1.9888895245781826" />
+      <entry key="S5" value="3.6921152073014616" />
+      <entry key="S10" value="6.257540501205767" />
+      <entry key="S30" value="13.248249494576417" />
+      <entry key="S60" value="17.199799985283512" />
+      <entry key="M2" value="19.832037657005465" />
+      <entry key="M5" value="22.31793285992561" />
+      <entry key="M10" value="29.764247142110932" />
+      <entry key="M15" value="43.114810716162" />
+      <entry key="M30" value="88.77336286868612" />
+      <entry key="H1" value="162.07840046132583" />
+      <entry key="H2" value="257.61225848159984" />
+      <entry key="H4" value="350.6508603037167" />
+      <entry key="D1" value="476.781914502568" />
+      <entry key="W1" value="505.0546785300345" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000008702902685" />
-      <entry key="S2" value="1.0305433052003377" />
-      <entry key="S5" value="1.2477230467608023" />
-      <entry key="S10" value="1.4977234561251664" />
-      <entry key="S30" value="1.8103313464914936" />
-      <entry key="S60" value="2.034807058472782" />
-      <entry key="M2" value="2.4599242750672605" />
-      <entry key="M5" value="3.48305830420067" />
-      <entry key="M10" value="4.718199095011234" />
-      <entry key="M15" value="5.748732200735752" />
-      <entry key="M30" value="8.483613718612466" />
-      <entry key="H1" value="12.7989266339015" />
-      <entry key="H2" value="18.182441794814775" />
-      <entry key="H4" value="23.096543785263332" />
-      <entry key="D1" value="29.393589668438523" />
-      <entry key="W1" value="30.762010040962814" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.185787165277505E-126" />
+      <entry key="S5" value="5.2540523618016916E-51" />
+      <entry key="S10" value="9.718958578862982E-26" />
+      <entry key="S30" value="7.2747951965665195E-9" />
+      <entry key="S60" value="1.2898956716239407E-4" />
+      <entry key="M2" value="0.019585624019984694" />
+      <entry key="M5" value="0.5039262877906325" />
+      <entry key="M10" value="1.7946484903855535" />
+      <entry key="M15" value="3.0179184578485296" />
+      <entry key="M30" value="6.146793132465283" />
+      <entry key="H1" value="10.894502564315731" />
+      <entry key="H2" value="16.775255128414322" />
+      <entry key="H4" value="22.184797045310248" />
+      <entry key="D1" value="29.196942271406424" />
+      <entry key="W1" value="30.73252506071112" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.862713551666311E-6" />
-      <entry key="MS500" value="0.08997146229264597" />
-      <entry key="S2" value="0.6610264166508981" />
-      <entry key="S5" value="1.3623343114900373" />
-      <entry key="S10" value="1.9397230587540255" />
-      <entry key="S30" value="2.627566674935031" />
-      <entry key="S60" value="3.2034106506017612" />
-      <entry key="M2" value="4.16834494789005" />
-      <entry key="M5" value="8.063023776582087" />
-      <entry key="M10" value="24.281564927189496" />
-      <entry key="M15" value="44.913274677984724" />
-      <entry key="M30" value="99.55024424831619" />
-      <entry key="H1" value="176.2963840712966" />
-      <entry key="H2" value="272.51489247196236" />
-      <entry key="H4" value="364.22774067974336" />
-      <entry key="D1" value="486.2331926233142" />
-      <entry key="W1" value="513.2793390965529" />
+      <entry key="MS100" value="0.952638085310294" />
+      <entry key="MS500" value="1.0323054910964407" />
+      <entry key="S2" value="1.983966643822401" />
+      <entry key="S5" value="3.6883773724277855" />
+      <entry key="S10" value="6.254292631290155" />
+      <entry key="S30" value="13.245884254953499" />
+      <entry key="S60" value="17.19837599998219" />
+      <entry key="M2" value="19.850446657097155" />
+      <entry key="M5" value="22.81798254387152" />
+      <entry key="M10" value="31.548329215601584" />
+      <entry key="M15" value="46.11677279453329" />
+      <entry key="M30" value="94.89680194116252" />
+      <entry key="H1" value="172.9477639295919" />
+      <entry key="H2" value="274.3659108396439" />
+      <entry key="H4" value="372.8204871250301" />
+      <entry key="D1" value="505.97535252524824" />
+      <entry key="W1" value="535.7866719481536" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -132,7 +132,8 @@
       <workItem from="1788479169471" duration="8021000" />
       <workItem from="1788558480375" duration="155000" />
       <workItem from="1788560754258" duration="918000" />
-      <workItem from="1788833253993" duration="2835000" />
+      <workItem from="1788833253993" duration="2969000" />
+      <workItem from="1788878162473" duration="508000" />
     </task>
     <task id="LOCAL-00001" summary="Create initial layout if buttons, entries and labels">
       <option name="closed" value="true" />
@@ -198,7 +199,23 @@
       <option name="project" value="LOCAL" />
       <updated>1788561646647</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fix ingredient and step entry string to be saved">
+      <option name="closed" value="true" />
+      <created>1788836143709</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1788836143709</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fix ingredient and step entry string to be saved in DB and add numbered lists">
+      <option name="closed" value="true" />
+      <created>1788836170061</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1788836170061</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +229,9 @@
     <MESSAGE value="Changing to one func for both extra step and ingredient" />
     <MESSAGE value="fix bug for row function that put entry in wrong place and did not push save button down" />
     <MESSAGE value="Created a new frame for recipes to show, refactored frame names" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a new frame for recipes to show, refactored frame names" />
+    <MESSAGE value="Fix ingredient and step entry string to be saved" />
+    <MESSAGE value="Fix ingredient and step entry string to be saved in DB and add numbered lists" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix ingredient and step entry string to be saved in DB and add numbered lists" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/meal_prepper$main.coverage" NAME="main Coverage Results" MODIFIED="1788835964948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

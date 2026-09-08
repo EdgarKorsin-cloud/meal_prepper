@@ -114,9 +114,11 @@ meal_ingredient_quantity_label = tkinter.Label(middle_frame_left, text="Quantity
 meal_ingredient_quantity_label.grid(row=0, column=2)
 meal_ingredient_quantity_entry = tkinter.Entry(middle_frame_left)
 meal_ingredient_quantity_entry.grid(row=1, column=2)
+ingredients_rows.append((meal_ingredient_entry, meal_ingredient_quantity_entry))
+
 add_ingredient_button = tkinter.Button(middle_frame_left, text="add ingredient", command=lambda: add_row("ingredient"))
 add_ingredient_button.grid(row=1, column=4)
-ingredients_rows.append((meal_ingredient_entry, meal_ingredient_quantity_entry))
+
 
 # to be called when there are at least two ingredients remove_ingredient_button = tkinter.Button(text="remove ingredient")
 steps_label = tkinter.Label(bottom_frame_left, text="STEPS")
@@ -127,10 +129,11 @@ list_of_steps_entry = tkinter.Entry(bottom_frame_left)
 list_of_steps_entry.grid(row=1, column=1, columnspan=3)
 list_of_steps_entry.config(width=40)
 add_steps_button = tkinter.Button(bottom_frame_left, text="add step", command=lambda: add_row("step"))
-add_steps_button.grid(row=1, column=4) # Must add another entry box below to add a new step
+add_steps_button.grid(row=1, column=4)
+steps_rows.append(list_of_steps_entry)
 # to be called when there are at least two steps
 remove_steps_button = tkinter.Button(text="remove step")
-# saves to sqldb
+
 save_recipe_button = tkinter.Button(bottom_frame_left, text="SAVE RECIPE", command=passing_info_to_save)
 save_recipe_button.grid(row=2, column=1,)
 
