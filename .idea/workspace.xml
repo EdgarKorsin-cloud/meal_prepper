@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fd0dbd4-6df7-47e1-90b8-4a7172edf5c2" name="Changes" comment="Fix ingredient and step entry string to be saved in DB and add numbered lists">
-      <change afterPath="$PROJECT_DIR$/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="8fd0dbd4-6df7-47e1-90b8-4a7172edf5c2" name="Changes" comment="Change file name to server instead of api" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,61 +34,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000032751672228" />
-      <entry key="MS500" value="1.079994712068705" />
-      <entry key="S2" value="1.5723004584572506" />
-      <entry key="S5" value="2.054070848050654" />
-      <entry key="S10" value="2.4099018297308707" />
-      <entry key="S30" value="2.989388023541543" />
-      <entry key="S60" value="4.229868991332511" />
-      <entry key="M2" value="8.907589603450969" />
-      <entry key="M5" value="23.235533246629014" />
-      <entry key="M10" value="41.60809725336528" />
-      <entry key="M15" value="58.00790383800941" />
-      <entry key="M30" value="105.62859585884253" />
-      <entry key="H1" value="185.6275511430693" />
-      <entry key="H2" value="293.56233199774084" />
-      <entry key="H4" value="401.81666543523005" />
-      <entry key="D1" value="553.2866376620347" />
-      <entry key="W1" value="587.9184816650046" />
+      <entry key="MS100" value="1.0121643463824093" />
+      <entry key="MS500" value="1.6201262556350686" />
+      <entry key="S2" value="3.658711122243952" />
+      <entry key="S5" value="6.858210774296932" />
+      <entry key="S10" value="10.326463164783865" />
+      <entry key="S30" value="21.12192687156925" />
+      <entry key="S60" value="32.14626191831027" />
+      <entry key="M2" value="45.46328187303179" />
+      <entry key="M5" value="68.28810462497067" />
+      <entry key="M10" value="91.84568030784821" />
+      <entry key="M15" value="110.54790833602173" />
+      <entry key="M30" value="160.7793349610986" />
+      <entry key="H1" value="242.8620505736966" />
+      <entry key="H2" value="353.0916234205928" />
+      <entry key="H4" value="463.7822441702588" />
+      <entry key="D1" value="619.144105315453" />
+      <entry key="W1" value="654.7453392005988" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="3.8906967559166906E-90" />
-      <entry key="S5" value="1.721912001993252E-36" />
-      <entry key="S10" value="1.3122164463202149E-18" />
-      <entry key="S30" value="1.0948009330223134E-6" />
-      <entry key="S60" value="0.001046327354714502" />
-      <entry key="M2" value="0.03234751886149788" />
-      <entry key="M5" value="0.2610073582656136" />
-      <entry key="M10" value="0.7228883108324557" />
-      <entry key="M15" value="1.3763068813479742" />
-      <entry key="M30" value="3.846360390568631" />
-      <entry key="H1" value="8.567169210343462" />
-      <entry key="H2" value="15.024706066301624" />
-      <entry key="H4" value="21.296629764252867" />
-      <entry key="D1" value="29.769179551497338" />
-      <entry key="W1" value="31.667837937861872" />
+      <entry key="S2" value="2.9492907419147E-127" />
+      <entry key="S5" value="2.4427950709768784E-51" />
+      <entry key="S10" value="4.9424640322180114E-26" />
+      <entry key="S30" value="3.669845992398411E-9" />
+      <entry key="S60" value="6.0579253817408176E-5" />
+      <entry key="M2" value="0.007783396322680774" />
+      <entry key="M5" value="0.1476331951543985" />
+      <entry key="M10" value="0.5436718366836539" />
+      <entry key="M15" value="1.1382186673414174" />
+      <entry key="M30" value="3.4978822451022156" />
+      <entry key="H1" value="8.16986631994891" />
+      <entry key="H2" value="14.67218476356087" />
+      <entry key="H4" value="21.04530781697095" />
+      <entry key="D1" value="29.710338444172663" />
+      <entry key="W1" value="31.658888360367634" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="9.380343275073001E-5" />
-      <entry key="MS500" value="0.16339941435670918" />
-      <entry key="S2" value="0.9174138464155023" />
-      <entry key="S5" value="1.4388957213124862" />
-      <entry key="S10" value="1.6942287598366876" />
-      <entry key="S30" value="2.2111091045866993" />
-      <entry key="S60" value="3.601636396568528" />
-      <entry key="M2" value="8.50461821343787" />
-      <entry key="M5" value="23.26060357299801" />
-      <entry key="M10" value="42.18858737169454" />
-      <entry key="M15" value="59.277692580889784" />
-      <entry key="M30" value="109.40609304885857" />
-      <entry key="H1" value="194.14639482641326" />
-      <entry key="H2" value="308.5530225950178" />
-      <entry key="H4" value="423.09129951789305" />
-      <entry key="D1" value="583.0509914621931" />
-      <entry key="W1" value="619.5855924574242" />
+      <entry key="MS100" value="0.9710131247007524" />
+      <entry key="MS500" value="1.6050912644482012" />
+      <entry key="S2" value="3.5350235881076784" />
+      <entry key="S5" value="6.7080055957892455" />
+      <entry key="S10" value="10.216130232611098" />
+      <entry key="S30" value="21.06467733147761" />
+      <entry key="S60" value="32.05950967649254" />
+      <entry key="M2" value="45.31559356953379" />
+      <entry key="M5" value="68.26708253688228" />
+      <entry key="M10" value="92.26075024167254" />
+      <entry key="M15" value="111.5826836094644" />
+      <entry key="M30" value="164.20636823696768" />
+      <entry key="H1" value="250.98157453371456" />
+      <entry key="H2" value="367.7284243600407" />
+      <entry key="H4" value="484.80472313903954" />
+      <entry key="D1" value="648.8494440905998" />
+      <entry key="W1" value="686.4034743801911" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -104,25 +100,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
+    "Python.server.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -142,7 +141,7 @@
       <workItem from="1788560754258" duration="918000" />
       <workItem from="1788833253993" duration="2969000" />
       <workItem from="1788878162473" duration="1827000" />
-      <workItem from="1788893988299" duration="1908000" />
+      <workItem from="1788893988299" duration="2221000" />
     </task>
     <task id="LOCAL-00001" summary="Create initial layout if buttons, entries and labels">
       <option name="closed" value="true" />
@@ -232,7 +231,31 @@
       <option name="project" value="LOCAL" />
       <updated>1788878755889</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Start remove row func&#10;Create server for REST API, to return recipe names and individual recipes">
+      <option name="closed" value="true" />
+      <created>1788896117891</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1788896117891</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Change file name to server instead of api">
+      <option name="closed" value="true" />
+      <created>1788896161556</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1788896161556</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Change file name to server instead of api">
+      <option name="closed" value="true" />
+      <created>1788896198535</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1788896198535</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +271,9 @@
     <MESSAGE value="Created a new frame for recipes to show, refactored frame names" />
     <MESSAGE value="Fix ingredient and step entry string to be saved" />
     <MESSAGE value="Fix ingredient and step entry string to be saved in DB and add numbered lists" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix ingredient and step entry string to be saved in DB and add numbered lists" />
+    <MESSAGE value="Start remove row func&#10;Create server for REST API, to return recipe names and individual recipes" />
+    <MESSAGE value="Change file name to server instead of api" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change file name to server instead of api" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/meal_prepper$main.coverage" NAME="main Coverage Results" MODIFIED="1788835964948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
