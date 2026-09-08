@@ -2,7 +2,6 @@ import tkinter
 from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, relationship, sessionmaker
 from sqlalchemy import Column, Integer, String, Float, ForeignKey, DateTime
-from datetime import datetime
 
 #DB setup
 engine = create_engine('sqlite:///app.db.sqlite')

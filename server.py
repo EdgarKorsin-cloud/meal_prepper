@@ -39,12 +39,13 @@ def get_recipes():
 
 @app.route("/api/v1/recipes/names", methods=["GET"])
 def get_all_recipes_names():
-    stmt= db.select(Recipe.name)
-    recipe_names = db.session.scalars(stmt).all()
+    stmt = db.select(Recipe)
+    recipes = db.session.scalars(stmt).all()
+    recipe_names = [recipe.name for recipe in recipes]
+
     if not recipe_names:
         return jsonify({"success": False, "error": "No recipes found"}), 404
-    return jsonify({"success": True, "data": [r.name for r in recipe_names]}), 200
-
+    return jsonify({"success": True, "data": recipe_names}), 200
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fd0dbd4-6df7-47e1-90b8-4a7172edf5c2" name="Changes" comment="Change file name to server instead of api" />
+    <list default="true" id="8fd0dbd4-6df7-47e1-90b8-4a7172edf5c2" name="Changes" comment="Change file name to server instead of api, fix config of db">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,61 +37,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0121643463824093" />
-      <entry key="MS500" value="1.6201262556350686" />
-      <entry key="S2" value="3.658711122243952" />
-      <entry key="S5" value="6.858210774296932" />
-      <entry key="S10" value="10.326463164783865" />
-      <entry key="S30" value="21.12192687156925" />
-      <entry key="S60" value="32.14626191831027" />
-      <entry key="M2" value="45.46328187303179" />
-      <entry key="M5" value="68.28810462497067" />
-      <entry key="M10" value="91.84568030784821" />
-      <entry key="M15" value="110.54790833602173" />
-      <entry key="M30" value="160.7793349610986" />
-      <entry key="H1" value="242.8620505736966" />
-      <entry key="H2" value="353.0916234205928" />
-      <entry key="H4" value="463.7822441702588" />
-      <entry key="D1" value="619.144105315453" />
-      <entry key="W1" value="654.7453392005988" />
+      <entry key="MS100" value="1.0319066289283794" />
+      <entry key="MS500" value="1.5048639230930099" />
+      <entry key="S2" value="2.3203405053789847" />
+      <entry key="S5" value="3.360029018518941" />
+      <entry key="S10" value="4.031810340436565" />
+      <entry key="S30" value="5.135489165828619" />
+      <entry key="S60" value="9.752619655824077" />
+      <entry key="M2" value="22.72682020959768" />
+      <entry key="M5" value="51.914510771224194" />
+      <entry key="M10" value="81.13907674635179" />
+      <entry key="M15" value="102.55865134109509" />
+      <entry key="M30" value="156.04208218488066" />
+      <entry key="H1" value="240.3947842564339" />
+      <entry key="H2" value="352.62176589999956" />
+      <entry key="H4" value="465.1761823597869" />
+      <entry key="D1" value="623.3391975837011" />
+      <entry key="W1" value="659.6236738764298" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="2.9492907419147E-127" />
-      <entry key="S5" value="2.4427950709768784E-51" />
-      <entry key="S10" value="4.9424640322180114E-26" />
-      <entry key="S30" value="3.669845992398411E-9" />
-      <entry key="S60" value="6.0579253817408176E-5" />
-      <entry key="M2" value="0.007783396322680774" />
-      <entry key="M5" value="0.1476331951543985" />
-      <entry key="M10" value="0.5436718366836539" />
-      <entry key="M15" value="1.1382186673414174" />
-      <entry key="M30" value="3.4978822451022156" />
-      <entry key="H1" value="8.16986631994891" />
-      <entry key="H2" value="14.67218476356087" />
-      <entry key="H4" value="21.04530781697095" />
-      <entry key="D1" value="29.710338444172663" />
-      <entry key="W1" value="31.658888360367634" />
+      <entry key="S2" value="1.1676778687936968E-151" />
+      <entry key="S5" value="4.23573927247217E-61" />
+      <entry key="S10" value="6.508255735965022E-31" />
+      <entry key="S30" value="8.666056907643628E-11" />
+      <entry key="S60" value="9.309165864479424E-6" />
+      <entry key="M2" value="0.0030511430471505687" />
+      <entry key="M5" value="0.10150826126896051" />
+      <entry key="M10" value="0.4508120552823945" />
+      <entry key="M15" value="1.0046115352544687" />
+      <entry key="M30" value="3.2861804930050074" />
+      <entry key="H1" value="7.918776116610044" />
+      <entry key="H2" value="14.444960028062575" />
+      <entry key="H4" value="20.88171003532934" />
+      <entry key="D1" value="29.67172046171013" />
+      <entry key="W1" value="31.653006405869572" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9710131247007524" />
-      <entry key="MS500" value="1.6050912644482012" />
-      <entry key="S2" value="3.5350235881076784" />
-      <entry key="S5" value="6.7080055957892455" />
-      <entry key="S10" value="10.216130232611098" />
-      <entry key="S30" value="21.06467733147761" />
-      <entry key="S60" value="32.05950967649254" />
-      <entry key="M2" value="45.31559356953379" />
-      <entry key="M5" value="68.26708253688228" />
-      <entry key="M10" value="92.26075024167254" />
-      <entry key="M15" value="111.5826836094644" />
-      <entry key="M30" value="164.20636823696768" />
-      <entry key="H1" value="250.98157453371456" />
-      <entry key="H2" value="367.7284243600407" />
-      <entry key="H4" value="484.80472313903954" />
-      <entry key="D1" value="648.8494440905998" />
-      <entry key="W1" value="686.4034743801911" />
+      <entry key="MS100" value="0.9830334651505994" />
+      <entry key="MS500" value="1.49033237701798" />
+      <entry key="S2" value="2.3148108129446054" />
+      <entry key="S5" value="3.3568933250272472" />
+      <entry key="S10" value="4.0299455530284005" />
+      <entry key="S30" value="5.1334277604966" />
+      <entry key="S60" value="9.738920922185626" />
+      <entry key="M2" value="22.66873826206946" />
+      <entry key="M5" value="51.899980912239215" />
+      <entry key="M10" value="81.48321427036689" />
+      <entry key="M15" value="103.47193658993925" />
+      <entry key="M30" value="159.26168899708793" />
+      <entry key="H1" value="248.2647588700513" />
+      <entry key="H2" value="367.03188690911026" />
+      <entry key="H4" value="486.0352394210171" />
+      <entry key="D1" value="653.0059246102995" />
+      <entry key="W1" value="691.2759272036383" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -141,7 +144,7 @@
       <workItem from="1788560754258" duration="918000" />
       <workItem from="1788833253993" duration="2969000" />
       <workItem from="1788878162473" duration="1827000" />
-      <workItem from="1788893988299" duration="2221000" />
+      <workItem from="1788893988299" duration="3698000" />
     </task>
     <task id="LOCAL-00001" summary="Create initial layout if buttons, entries and labels">
       <option name="closed" value="true" />
@@ -255,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788896198535</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Change file name to server instead of api, fix config of db">
+      <option name="closed" value="true" />
+      <created>1788896325390</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1788896325390</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,9 +284,11 @@
     <MESSAGE value="Fix ingredient and step entry string to be saved in DB and add numbered lists" />
     <MESSAGE value="Start remove row func&#10;Create server for REST API, to return recipe names and individual recipes" />
     <MESSAGE value="Change file name to server instead of api" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change file name to server instead of api" />
+    <MESSAGE value="Change file name to server instead of api, fix config of db" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change file name to server instead of api, fix config of db" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/meal_prepper$main.coverage" NAME="main Coverage Results" MODIFIED="1788835964948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/meal_prepper$main.coverage" NAME="main Coverage Results" MODIFIED="1788896361962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/meal_prepper$server.coverage" NAME="server Coverage Results" MODIFIED="1788897431951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
