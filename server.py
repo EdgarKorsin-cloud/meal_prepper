@@ -23,7 +23,7 @@ class Recipe(db.Model):
             "steps": self.steps,
         }
 
-@app.route("/api/v1/recipes", methods=["GET"]):
+@app.route("/api/v1/recipes", methods=["GET"])
 def get_recipes():
     recipe_name = request.args.get("name", type=str)
     stmt= db.select(Recipe)
