@@ -33,6 +33,7 @@ def add_row(row_type):
         new_quantity_entry.grid(row=next_row, column=2, padx=10, pady=10)
 
         add_ingredient_button.grid(row=next_row, column=4)
+
         ingredients_rows.append((new_ingredient_entry, new_quantity_entry))
 
     elif row_type == "step":
@@ -42,6 +43,7 @@ def add_row(row_type):
 
         add_steps_button.grid(row=next_row, column=4)
         save_recipe_button.grid(row=next_row + 1, column=1)
+
         steps_rows.append(new_step_entry)
 
     next_row += 1
@@ -55,14 +57,30 @@ def save_recipe(name,ingredients,steps):
 
 def passing_info_to_save():
     name=meal_name_entry.get()
-    ingredients=meal_ingredient_entry.get()
-    steps=list_of_steps_entry.get()
-    save_recipe(name,ingredients,steps)
+    ingredients_list = []
+    for i, (ing_entry, qty_entry) in enumerate(ingredients_rows, 1):
+        ing_name = ing_entry.get()
+        qty = qty_entry.get()
+        if ing_name:
+            ingredients_list.append(f"{i}. {ing_name} ({qty})")
 
-    meal_name_entry.delete(0, 'end')
-    meal_ingredient_entry.delete(0, 'end')
-    list_of_steps_entry.delete(0, 'end')
-    meal_ingredient_quantity_entry.delete(0, 'end')
+    ingredients_string = "\n".join(ingredients_list)
+
+    steps_list = []
+    for i, step_entry in enumerate(steps_rows, 1):
+        step_text = step_entry.get()
+        if step_text:
+            steps_list.append(f"{i}. {step_text}")
+
+    steps_string = "\n".join(steps_list)
+
+    save_recipe(name, ingredients_string, steps_string)
+
+    for widget in window.winfo_children():
+        for child in widget.winfo_children():
+            if isinstance(child, tkinter.Entry):
+                child.delete(0, tkinter.END)
+
     meal_name_entry.focus_set()
 
     print("Recipe saved")
