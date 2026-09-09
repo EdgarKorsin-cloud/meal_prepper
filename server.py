@@ -27,10 +27,14 @@ class Recipe(db.Model):
 
 @app.route("/api/v1/recipes", methods=["GET"])
 def get_recipes():
-    recipe_name = request.args.get("name", type=str)
-    stmt= db.select(Recipe)
+    recipe_name = request.args.get("recipe_name", default="", type=str)
+    recipe_name = recipe_name.strip()
     if recipe_name:
-        stmt = stmt.where(Recipe.name == recipe_name)
+        search_term = f"%{recipe_name}%"
+        stmt = db.select(Recipe).where(Recipe.name.like(search_term))
+    else:
+        stmt = db.select(Recipe)
+
     recipes = db.session.scalars(stmt).all()
     if not recipes:
         return jsonify({"success": False, "error": "Item not found"}), 404
